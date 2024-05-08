@@ -1,5 +1,5 @@
 
-#Diagrama de Caso de Uso: iPhone - Funcionalidades
+# Diagrama de Caso de Uso: iPhone - Funcionalidades
 
 O diagrama de caso de uso representa as interações entre os atores externos e as funcionalidades do iPhone. Neste diagrama, são identificados quatro atores principais:
 
