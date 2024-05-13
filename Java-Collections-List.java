@@ -22,8 +22,11 @@ public class Main
 	    notas.add(10d);
 	    System.out.println(notas);
 	    notas.add(1d);
+	    //remove o valor
 	    System.out.println(notas.toString());
 	    notas.remove(5d);
+	    //remove o índice
+	    notas.remove(3);
 	    System.out.println(notas.toString());
 	    System.out.println("Exibindo a posição da nota 10: "+ notas.indexOf(10d));
 	    System.out.println("Adicionando o item 8.0 na posição 4");
@@ -51,5 +54,20 @@ public class Main
         }
         System.out.println("Soma dos valores: " + soma);
         System.out.println("Média das notas: " + soma/notas.size());
+        notas.remove(0d);
+        System.out.println(notas);
+        System.out.println("Removendo as notas menores que 7.0 da lista:");
+        //tem que criar outro iterador
+        Iterator<Double> iterator1 = notas.iterator();
+        while(iterator1.hasNext()){
+            Double next = iterator1.next();
+            if(next < 7){
+                iterator1.remove();
+            }
+        System.out.println(notas);
+        System.out.println("Apagando toda a lista:");
+        notas.clear(); //dá algum erro utilizando esse método (ainda buscarei saber por que)
+       // System.out.println("A lista está vazia? " + notas.isEmpty());
+        }
 	}
 }
