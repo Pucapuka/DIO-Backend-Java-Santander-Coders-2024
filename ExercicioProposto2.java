@@ -74,5 +74,5 @@ public static String resultado(int soma){
 		    return "Suspeita";
 		else
 		    return "Inocente";
-}
+   }
 }
