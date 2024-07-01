@@ -103,6 +103,8 @@ public class Main {
             System.out.println("1. Depositar\n"
                              + "2. Sacar\n"
                              + "3. Transferir\n"
+                             + "4. Extrato\n"
+                             + "5. Informações da conta\n"
                              + "0. Voltar");
             int escolha = scan.nextInt();
 
@@ -145,6 +147,11 @@ public class Main {
                         System.out.println("Conta de destino inválida.");
                     }
                     break;
+                case 4:
+                	conta.imprimirExtrato();
+                	break;
+                case 5:
+                	conta.imprimirInformacoes();
                 default:
                     System.out.println("Escolha uma opção válida");
             }
